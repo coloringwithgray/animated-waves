@@ -1,0 +1,40 @@
+/* CSS file: styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Ensure the background color matches the image */
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wave-image {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+    animation: wave 20s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(-25%) translateY(-25%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
