@@ -1,14 +1,16 @@
 
+/* CSS file: styles.css */
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #000; /* Fallback background color */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; /* Fallback background color */
 }
 
 .video-container {
